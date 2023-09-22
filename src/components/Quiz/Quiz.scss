@@ -1,0 +1,81 @@
+@import "../../styles/variables";
+
+.quiz-container {
+  width: 100%;
+  background: $bg;
+  border-radius: 4px;
+  margin-top: 50px;
+  padding: 30px 60px;
+  box-sizing: border-box;
+
+
+
+  .active-question-no {
+    font-size: calc(10px + 2vmin);
+    font-weight: 500;
+    color: $primary;
+  }
+
+  .total-question {
+    font-size: calc(10px + 1.2vmin);
+    font-weight: 500;
+    color: $disabled;
+  }
+
+  h2 {
+    font-size: calc(10px + 1.2vmin);
+    font-weight: 500;
+    margin: 20px 0;
+  }
+
+
+  ul {
+    margin-top: 20px;
+    margin-left: -40px;
+
+    li {
+      text-decoration: none;
+      list-style: none;
+      color: $foreground;
+      font-size: calc(10px + 0.8vmin);
+      background: $bg;
+      border: 1px solid $disabled;
+      border-radius: 16px;
+      padding: 11px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+    .selected-answer {
+      background: $primary;
+      border: 1px solid $accent;
+      color: $bg
+    }
+
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  button {
+    background: $accent;
+    border-radius: 16px;
+    font-size: calc(10px + 1vmin);
+    color: $foreground;
+    padding: 10px 42px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+
+    &:disabled {
+      background: $bg-accent;
+      color: $disabled;
+      cursor: not-allowed;
+    }
+  }
+}
+

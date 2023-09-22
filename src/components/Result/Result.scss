@@ -1,0 +1,53 @@
+@import "../../styles/variables";
+
+.result {
+  text-align: center;
+  background-color: $bg-second-color;
+  padding-bottom: 15px;
+  margin:0 auto;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-size: calc(10px + 3vmin);
+    color: $accent;
+    letter-spacing: 1.4px;
+    text-align: center;
+    font-weight: normal;
+    margin: 5px;
+  }
+  h4 {
+    font-size: calc(10px + 2vmin);
+    color: $accent;
+    letter-spacing: 1.4px;
+    text-align: center;
+    font-weight: normal;
+    margin: 5px;
+  }
+
+  p {
+    color: $bg-accent;
+    font-size: calc(10px + 1vmin); ;
+    font-weight: 500;
+
+    span {
+      color: $accent;
+      font-size: calc(10px + 2.5vmin);
+      font-weight: bold;
+    }
+  }
+
+  table {
+    color:$bg-second-color;
+    font-size: calc(10px + 0.8vmin);
+    background-color: $accent ;
+    text-align: left;
+    border: $bg ;
+    width: 100%;
+    margin-top: 10px ;
+     tr {
+       border: 1px solid $bg;
+     }
+  }
+}
